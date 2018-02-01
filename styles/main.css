@@ -1,61 +1,197 @@
 body {
-  font-size: 100%;
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+     font-size: 100%;
+     font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 }
-
-p {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  color: #2d2d2d;
+ p {
+     font-family: "Open Sans", Helvetica, Arial, sans-serif;
+     font-weight: lighter;
+     color: #2d2d2d;
+     text-align: center;
 }
-
-/* TODO: size images manually so this is not necessary */
-img {
-  max-height: 20rem;
+ * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
 }
-
+ .col img {
+     max-height: 22rem;
+     margin: auto;
+     padding: 1rem;
+     display: block;
+     max-width: 100%;
+}
 /***************** NAV *****************/
-
-nav a:hover {
-  text-decoration: underline;
+ nav a:hover {
+     text-decoration: none;
+     color: #3D7FCF;
 }
-
+/* Responsive Nav Bar */
+ ul {
+     background-color: #CE843B;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+ li {
+     font-size: 1.15rem;
+     height: 3rem;
+     border-bottom: 1px solid white;
+     flex-grow: 3;
+     padding: 1rem 0;
+     font-weight: 600;
+}
+ .cart-info {
+     flex-basis: 2.2rem;
+     flex-grow: 1.9;
+     padding: 1rem;
+}
+ .cart-info:hover {
+     color:beige 
+}
+ li a {
+     text-decoration: none;
+     color: white;
+}
 /**************** HERO *****************/
-
-header img {
-  max-height: 6rem;
+ header img {
+     max-height: 13rem;
 }
-
-h1 .logo-w {
-  font-size: 3.5rem;
+ h1 .logo-w {
+     font-size: 7.77rem;
 }
-
+ h1 {
+     color: #3D7FCF;
+     display: inline-block;
+     font-size: 2.48rem;
+     font-family: 'Frijole', cursive;
+}
 /**************** ASIDE ****************/
-
-input[type="submit"] {
-  padding: .25rem;
-  background-color: #3D7FCF;
-  border: 1px solid #3D7FCF;
-  border-radius: 5px;
-  font-size: .75rem;
-  color: white;
+ @media only screen and (max-width: 670px) {
+     aside {
+         float: none;
+         width: 100%;
+         padding-top: 2rem;
+    }
 }
-
+ input {
+     display: block;
+     padding: .22rem;
+     margin: .22rem;
+     width: 100%;
+}
+ aside {
+     float: left;
+     padding: .48rem;
+     padding-top: 3rem;
+     width: 19%;
+}
+ input[type="submit"] {
+     padding: .25rem;
+     background-color: #3D7FCF;
+     border: 1px solid #3D7FCF;
+     border-radius: 5px;
+     font-size: .75rem;
+     color: white;
+}
 /*********** PRODUCTS SECTION ***********/
-
-section {
-  padding: 0 .75rem;
+ section {
+     padding: 0.75rem;
+     float: left;
+     width: 77%;
 }
-
-h2 {
-  padding-top: 1.5rem;
-  font-size: 2rem;
-  text-align: center;
-  color: #2d2d2d;
+ h2 {
+     padding-top: 2.2rem;
+     font-size: 3.19rem;
+     text-align: center;
+     color: #2d2d2d;
 }
-
-h3 {
-  font-size: 1.2rem;
-  text-align: center;
-  color: #2d2d2d;
+ h3 {
+     font-size: 1.97rem;
+     text-align: center;
+     color: #195266;
+     font-family: 'Cormorant Garamond', serif;
+}
+/* responsive flexbox grid */
+ .item-container {
+     display: flex;
+     flex-wrap: wrap;
+}
+ .item-container:before, .item-container:after {
+     display: table;
+     content:"";
+}
+ .item-container:after {
+     clear:both;
+}
+ .col {
+     display: block;
+     float: left;
+     margin: 1% 0 .5% 1%;
+     border: 3px solid #CE843B;
+     padding: 1rem;
+}
+ .span_flex{
+     width: 32.22%;
+}
+ @media only screen and (max-width: 640px) {
+     .col {
+         margin: 1% 0 1% 1%;
+    }
+     .span_flex{
+         width: 48%;
+    }
+}
+ @media only screen and (max-width: 480px) {
+     .col {
+         margin: 1% 0 1% 0%;
+    }
+     .span_flex{
+         width: 100%;
+    }
+}
+/* Hover image effects */
+ .hvr-grow {
+     display: inline-block;
+     vertical-align: middle;
+     -webkit-transform: perspective(1px) translateZ(0);
+     transform: perspective(1px) translateZ(0);
+     box-shadow: 0 0 1px transparent;
+     -webkit-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+     -webkit-transition-property: transform;
+     transition-property: transform;
+}
+ .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+}
+ @-webkit-keyframes hvr-pop {
+     50% {
+         -webkit-transform: scale(2.2);
+         transform: scale(2.2);
+    }
+}
+ @keyframes hvr-pop {
+     50% {
+         -webkit-transform: scale(2.2);
+         transform: scale(2.2);
+    }
+}
+ .hvr-pop {
+     display: inline-block;
+     vertical-align: middle;
+     -webkit-transform: perspective(1px) translateZ(0);
+     transform: perspective(1px) translateZ(0);
+     box-shadow: 0 0 1px transparent;
+}
+ .hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+     -webkit-animation-name: hvr-pop;
+     animation-name: hvr-pop;
+     -webkit-animation-duration: 0.7s;
+     animation-duration: 0.7s;
+     -webkit-animation-timing-function: linear;
+     animation-timing-function: linear;
+     -webkit-animation-iteration-count: 1;
+     animation-iteration-count: 1;
 }
