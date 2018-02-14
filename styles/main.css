@@ -2,7 +2,7 @@ body {
      font-size: 100%;
      font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 }
- p {
+p {
      font-family: "Open Sans", Helvetica, Arial, sans-serif;
      font-weight: lighter;
      color: #2d2d2d;
@@ -13,7 +13,12 @@ body {
      padding: 0;
      margin: 0;
 }
- .col img {
+
+img {
+     max-width: 100%;
+} 
+
+.col img {
      max-height: 22rem;
      margin: auto;
      padding: 1rem;
@@ -21,19 +26,19 @@ body {
      max-width: 100%;
 }
 /***************** NAV *****************/
- nav a:hover {
+nav a:hover {
      text-decoration: none;
      color: #3D7FCF;
 }
 /* Responsive Nav Bar */
- ul {
+ul {
      background-color: #CE843B;
      display: flex;
      justify-content: center;
      align-items: center;
      text-align: center;
 }
- li {
+li {
      font-size: 1.15rem;
      height: 3rem;
      border-bottom: 1px solid white;
@@ -41,52 +46,52 @@ body {
      padding: 1rem 0;
      font-weight: 600;
 }
- .cart-info {
+.cart-info {
      flex-basis: 2.2rem;
      flex-grow: 1.9;
      padding: 1rem;
 }
- .cart-info:hover {
+.cart-info:hover {
      color:beige 
 }
- li a {
+li a {
      text-decoration: none;
      color: white;
 }
 /**************** HERO *****************/
- header img {
+header img {
      max-height: 13rem;
 }
- h1 .logo-w {
+h1 .logo-w {
      font-size: 7.77rem;
 }
- h1 {
+h1 {
      color: #3D7FCF;
      display: inline-block;
      font-size: 2.48rem;
      font-family: 'Frijole', cursive;
 }
 /**************** ASIDE ****************/
- @media only screen and (max-width: 670px) {
+@media only screen and (max-width: 670px) {
      aside {
          float: none;
          width: 100%;
          padding-top: 2rem;
     }
 }
- input {
+input {
      display: block;
      padding: .22rem;
      margin: .22rem;
      width: 100%;
 }
- aside {
+aside {
      float: left;
      padding: .48rem;
      padding-top: 3rem;
      width: 19%;
 }
- input[type="submit"] {
+input[type="submit"] {
      padding: .25rem;
      background-color: #3D7FCF;
      border: 1px solid #3D7FCF;
@@ -95,63 +100,63 @@ body {
      color: white;
 }
 /*********** PRODUCTS SECTION ***********/
- section {
+section {
      padding: 0.75rem;
      float: left;
      width: 77%;
 }
- h2 {
+h2 {
      padding-top: 2.2rem;
      font-size: 3.19rem;
      text-align: center;
      color: #2d2d2d;
 }
- h3 {
+h3 {
      font-size: 1.97rem;
      text-align: center;
      color: #195266;
      font-family: 'Cormorant Garamond', serif;
 }
 /* responsive flexbox grid */
- .item-container {
+.item-container {
      display: flex;
      flex-wrap: wrap;
 }
- .item-container:before, .item-container:after {
+.item-container:before, .item-container:after {
      display: table;
      content:"";
 }
- .item-container:after {
+.item-container:after {
      clear:both;
 }
- .col {
+.col {
      display: block;
      float: left;
      margin: 1% 0 .5% 1%;
      border: 3px solid #CE843B;
      padding: 1rem;
 }
- .span_flex{
+.span_flex{
      width: 32.22%;
 }
- @media only screen and (max-width: 640px) {
-     .col {
+@media only screen and (max-width: 640px) {
+    .col {
          margin: 1% 0 1% 1%;
     }
-     .span_flex{
+    .span_flex{
          width: 48%;
     }
 }
- @media only screen and (max-width: 480px) {
-     .col {
+@media only screen and (max-width: 480px) {
+    .col {
          margin: 1% 0 1% 0%;
     }
-     .span_flex{
+    .span_flex{
          width: 100%;
     }
 }
 /* Hover image effects */
- .hvr-grow {
+.hvr-grow {
      display: inline-block;
      vertical-align: middle;
      -webkit-transform: perspective(1px) translateZ(0);
@@ -162,30 +167,30 @@ body {
      -webkit-transition-property: transform;
      transition-property: transform;
 }
- .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
      -webkit-transform: scale(1.1);
      transform: scale(1.1);
 }
- @-webkit-keyframes hvr-pop {
-     50% {
+@-webkit-keyframes hvr-pop {
+    50% {
          -webkit-transform: scale(2.2);
          transform: scale(2.2);
     }
 }
- @keyframes hvr-pop {
-     50% {
+@keyframes hvr-pop {
+    50% {
          -webkit-transform: scale(2.2);
          transform: scale(2.2);
     }
 }
- .hvr-pop {
+.hvr-pop {
      display: inline-block;
      vertical-align: middle;
      -webkit-transform: perspective(1px) translateZ(0);
      transform: perspective(1px) translateZ(0);
      box-shadow: 0 0 1px transparent;
 }
- .hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
      -webkit-animation-name: hvr-pop;
      animation-name: hvr-pop;
      -webkit-animation-duration: 0.7s;

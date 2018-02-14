@@ -3,11 +3,12 @@
 <head>
   <title>Winter Scarves</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/main.css">
+  
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
   <link rel="icon" type="image/png" href="images/logo-scarfcat.png">
 </head>
 
@@ -24,7 +25,10 @@
       </ul>
     </nav>
 
-    <img class=hvr-pop src="images/logo-scarfcat.png" alt="dapper cartoon cat wearing a scarf">
+    <img class=hvr-pop 
+         srcset="images/logo-scarfcat.png 640w, images/logo-scarfcat-480w.png 480w, images/logo-scarfcat-240w.png 240w"
+         sizes="(max-width: 800px) 77px, (max-width: 1280px) 104px, (min-width: 2400px) 195px"
+         src="images/logo-scarfcat.png" alt="dapper cartoon cat wearing a scarf">
     <h1>
       <span class="logo-w">W</span>inter
       <span class="logo-w">W</span>ear
@@ -36,7 +40,7 @@
     <aside>
       <form>
         <label>Sign up for our mailing list:
-          <input name='q' type="email" name="email" placeholder="Enter e-mail here...">
+          <input name='q' type="email" placeholder="Enter e-mail here...">
         </label>
 
         <input type="submit" value="Submit">
@@ -56,14 +60,20 @@
 
         <div class="col span_flex">
           <h3>Fringed Plaid</h3>
-          <img class=hvr-grow src="images/fringed-plaid.jpeg" alt="fringed plaid scarf">
+          <img class=hvr-grow 
+               srcset="images/fringed-plaid.jpeg 960w, images/fringed-plaid-720w.jpeg 720w, images/fringed-plaid-360w.jpeg 360w"
+               sizes="(max-width: 800px) 116px, (max-width: 1280px) 235px, (min-width: 2400px) 440px"
+               src="images/fringed-plaid.jpeg" alt="fringed plaid scarf">
           <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
           <p>18.99</p>
         </div>
 
         <div class="col span_flex">
           <h3>Multi Color</h3>
-          <img class=hvr-grow src="images/multi-color.jpeg" alt="multi color scarf">
+          <img class=hvr-grow 
+               srcset="images/multi-color-960w.jpeg 960w, images/multi-color-720w.jpeg 800w, images/multi-color-440w.jpeg 440w"
+               sizes="(max-width: 800px) 116px, (max-width: 1280px) 235px, (min-width: 2400px) 440px"
+               src="images/multi-color.jpeg" alt="multi color scarf">
           <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
           <p>22.99</p>
         </div>
@@ -77,14 +87,20 @@
 
         <div class="col span_flex">
           <h3>Ombre Infinity</h3>
-          <img class=hvr-grow src="images/ombre-infinity.jpg" alt="ombre infinity scarf">
+          <img class=hvr-grow
+               srcset="images/ombre-infinity.jpg 860w, images/ombre-infinity-645w.jpg 645w, images/ombre-infinity-322w.jpg 322w"
+               sizes="(max-width: 800px) 116px, (max-width: 1280px) 208px, (min-width: 2400px) 390px"
+               src="images/ombre-infinity.jpg" alt="ombre infinity scarf">
           <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
           <p>11.99</p>
         </div>
 
         <div class="col span_flex">
           <h3>Ashby Twill</h3>
-          <img class=hvr-grow src="images/twill.jpg" alt="ashby twill scarf">
+          <img class=hvr-grow 
+               srcset="images/twill.jpg 1024w, images/twill-800w.jpg 800w, images/twill-400w.jpg 400w"
+               sizes="(max-width: 800px) 116px, (max-width: 1280px) 235px, (min-width: 2400px) 440px"
+               src="images/twill.jpg" alt="ashby twill scarf">
           <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
           <p>70.99</p>
         </div>
@@ -98,7 +114,10 @@
 
         <div class="col span_flex">
           <h3>Etro Paisley-Print Silk</h3>
-          <img class=hvr-grow src="images/etro.png" alt="etro paisley print silk scarf">
+          <img class=hvr-grow
+               srcset="images/etro.png 492w, images/etro-369w.png 369w, images/etro-185w.png 185w"
+               sizes="(max-width: 800px) 116px, (max-width: 1280px) 235px, (min-width: 2400px) 440px"
+               src="images/etro.png" alt="etro paisley print silk scarf">
           <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
           <p>26.99</p>
         </div>
