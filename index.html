@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Winter Scarves</title>
+  
   <meta charset="utf-8">
   
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -24,7 +25,6 @@
         </li>
       </ul>
     </nav>
-
     <img class=hvr-pop 
          srcset="images/logo-scarfcat.png 640w, images/logo-scarfcat-480w.png 480w, images/logo-scarfcat-240w.png 240w"
          sizes="(max-width: 800px) 77px, (max-width: 1280px) 104px, (min-width: 2400px) 195px"
@@ -36,18 +36,17 @@
       <span class="logo-w">W</span>arehouse
     </h1>
   </header>
-
-  <main>
+  
+    <main>
     <aside>
-      <form>
+      <form name="mailingList" onsubmit="emailSubmission()">
         <label>Sign up for our mailing list:
-          <input name='q' type="email" placeholder="Enter e-mail here...">
+          <input placeholder="Enter your e-mail address" type="email" name="email" >
         </label>
-
         <input type="submit" value="Submit">
-      </form>
+      </form>      
     </aside>
-
+      
     <section>
       <h2>scarves</h2>
 
