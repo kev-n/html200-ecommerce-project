@@ -230,3 +230,81 @@ h3 {
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
+/*media queries for mobile phones*/
+@media only screen 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hvr-pop {
+        display: none;
+    }
+
+    body {
+        font-size: 58%;
+    }
+
+    h1 {
+        font-size: 1.48rem;
+        margin: auto;
+    }
+
+    h3 {
+        font-size: 2.22rem;
+    }
+
+    * {
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        width: 100%;
+        font-size: 1.3rem;
+        border-bottom: .48px solid;
+    }
+
+    .cart-info {
+        order: -1;
+    }
+ 
+    p {
+        font-size: 1.3rem;
+        line-height: 1.48rem;
+    }
+
+    aside {
+        float: none;
+        padding-top: 1.19rem;
+        font-size: 1.48rem;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid #808080;
+        font-size: 1.48rem;
+    }
+
+    input[type="submit"] {
+        width: 22%;
+        margin: auto;
+        border-radius: 17px;
+        font-size: 1.48rem;
+        color: white;
+    }
+
+    section {
+        float: none;
+        width: 100%;
+    }
+    
+    .col {  
+        margin: 1% 0 1% 0%;
+    }
+	
+    .span_flex {
+        width: 100%;
+    }
+}
