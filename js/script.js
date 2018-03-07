@@ -51,11 +51,37 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ];
-
 // JS form handler function to be triggered on submission of the email signup form:
 function emailSubmission() {
-	event.preventDefault();
-	var eMailAddress = document.mailingList.email.value;
-	alert("Thank you for signing up to our newsletter!!");
-	console.log("Thanks for signing up for our mailing list, " + eMailAddress + "!");
+  "use strict";
+  event.preventDefault();
+  var eMailAddress = document.mailingList.email.value;
+  alert("Thank you for signing up to our newsletter!!");
+  console.log("Thanks for signing up for our mailing list, " + eMailAddress + "!");
+}
+// JS function to add/remove items from cart
+// init global varibles:
+var cart = [];
+var totalPrice = 0;
+// function for working shopping cart tally
+function putIntoCart(nameOfItem) {
+  "use strict";
+  event.preventDefault();
+  var i = cart.indexOf(nameOfItem);
+  // push/splice item into cart array:
+  if (i === -1) {
+    cart.push(nameOfItem);
+  } else {
+    cart.splice(i, 1);
+  }
+  // Console log the total price amount of cart:
+  console.log(cart.length + " products in your shopping cart!");
+  // keep number tally of cart item size next to cart icon:
+  if (cart.length !== 0) {
+    document.querySelector("#cartcount").innerHTML = "(" + cart.length + ")";
+  }
+  // when cart is empty, no number will appear beside cart icon:
+  else {
+    document.querySelector("#cartcount").innerHTML = "";
+  }
 }

@@ -115,6 +115,24 @@ input[type="submit"] {
     color: white;
 }
 /*********** PRODUCTS SECTION ***********/
+.addRemove {
+    background-color: #CE843B;
+    border: 7px;
+    border-radius: 7px;
+    padding: .22rem 1rem;
+}
+
+.addRemove:hover {
+    background-color: #008CBA;
+    text-shadow: 3px 3px 7px black, 0 0 25px blue, 0 0 5px darkblue;
+    color: white;
+}
+
+.checkCart {
+    display: table;
+    margin: 0 auto;
+}
+
 section {
     padding: 0.75rem;
     float: left;
@@ -268,7 +286,7 @@ h3 {
     .cart-info {
         order: -1;
     }
- 
+
     p {
         font-size: 1.3rem;
         line-height: 1.48rem;
@@ -299,11 +317,11 @@ h3 {
         float: none;
         width: 100%;
     }
-    
-    .col {  
+
+    .col {
         margin: 1% 0 1% 0%;
     }
-	
+
     .span_flex {
         width: 100%;
     }
