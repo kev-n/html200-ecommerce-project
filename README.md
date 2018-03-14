@@ -69,4 +69,29 @@ Lesson 09:
 Each weekly assignment will be graded independently. There will not be a final grade for the entire project.
 
 ## Testing
-[update this section with information about the testing steps you took to ensure site quality]
+
+#### Intended User Research
+- User base for scarves e-commerce: middle-class and above women with moderate disposable income.
+- Most likeyly devices owned: smartphone and computer (desktop or laptop).
+_sources:_ http://www.pewinternet.org/2015/10/29/technology-device-ownership-2015/
+
+#### Mobile Device Testing
+- Using Google's **PageSpeed Tools**, the resulting insight for mobile devices was a 74 out of 100 for optimization. For optimization, it suggested that CSS files could use  defer or asynchronous loading.
+
+- **BrowserStack**: tested on iPhone 6S with iOS 9, iPhone 5 with iOS 6, iPad Air with iOS 8.3, Samsung Galaxy 4 with Android version 5.0.1, Lollipop, and Google Nexus 6 with Android version 6.1 Marshmallow.
+
+- With **WebPageTest.org**, this site achieved scores of A for "First Byte Time", "Keep-alive Enabled", and "Compress Transfer". It only ranked a C in "Compress Images", and did very poorly (F) in "Cache static content". The site passed in the "Effective use of CDN" category.
+
+- On **ResponsiveDesignChecker.com**, the site responded well when switching over to a smartphone device. The item columns were able to make the best use of whatever device screen size that were selected.
+
+#### Desktop Computer Testing
+- **Edge 16** and **Internet Explorer 11.2** on Windows 10: site responded well and looks OK
+- **Safari 7.1** on OS X Mavericks: item grid/columns asymetrical
+- **Firefox 58.0.2** on Windows 10: the function emailSubmission() doesn't work;
+
+- **Chrome DevTools**: the e-mail sign-up button's text doesn't fit onto button on mobile devices.
+- **Firefox Developer Tools**: ~~the JavaScript doesn't seem to be working (ReferenceError: event is not defined for event.preventDefault(event);).~~ Page layout and images rendered nicely, and JS functions are working. 
+
+- Optimization score of 45/100 with **PageSpeed Tools**. It suggested that CSS and JS files could be minified, browser caching could use leveragin, and the images could use compression.
+
+- With **WebPageTest.org**, this site achieved scores of A for "First Byte Time", "Keep-alive Enabled", and "Compress Transfer". It only ranked a B in "Compress Images", and did very poorly (F) in "Cache static content". The site passed in the "Effective use of CDN" category.

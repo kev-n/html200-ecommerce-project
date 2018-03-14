@@ -45,7 +45,9 @@ var products = [{
 }];
 // JS form handler function to be triggered on submission of the email signup form:
 function emailSubmission() {
-  event.preventDefault();
+  function x(event) {
+    event.preventDefault(event);
+  }
   var eMailAddress = document.mailingList.email.value;
   alert("Thank you for signing up to our newsletter!!");
   console.log("Thanks for signing up for our mailing list, " + eMailAddress + "!");
@@ -56,7 +58,9 @@ var cart = [];
 var totalPrice = 0;
 // function for working shopping cart tally
 function putIntoCart(nameOfItem, price) {
-  event.preventDefault();
+  function x(event) {
+    event.preventDefault(event);
+  }
   var i = cart.indexOf(nameOfItem);
   // push/splice item into cart array:
   if (i === -1) {
