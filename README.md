@@ -72,8 +72,8 @@ Each weekly assignment will be graded independently. There will not be a final g
 
 #### Intended User Research
 - User base for scarves e-commerce: middle-class and above women with moderate disposable income.
-- Most likeyly devices owned: smartphone and computer (desktop or laptop).
-.._sources:_ http://www.pewinternet.org/2015/10/29/technology-device-ownership-2015/
+- Most likely devices owned: smartphone and computer (desktop or laptop).
+_sources:_ http://www.pewinternet.org/2015/10/29/technology-device-ownership-2015/
 
 #### Mobile Device Testing
 - Using Google's **PageSpeed Tools**, the resulting insight for mobile devices was a 74 out of 100 for optimization. For optimization, it suggested that CSS files could use  defer or asynchronous loading.
@@ -86,12 +86,12 @@ Each weekly assignment will be graded independently. There will not be a final g
 
 #### Desktop Computer Testing
 - **Edge 16** and **Internet Explorer 11.2** on Windows 10: site responded well and looks OK
-- **Safari 7.1** on OS X Mavericks: item grid/columns asymetrical.
+- **Safari 7.1** on OS X Mavericks: item grid/columns asymmetrical.
 - **Firefox 58.0.2** on Windows 10: ~~the function emailSubmission() doesn't work.~~ The site rendered perfectly, and JS functions are working.
 
 - **Chrome DevTools**: the e-mail sign-up button's text doesn't fit onto button on mobile devices.
 - **Firefox Developer Tools**: ~~the JavaScript doesn't seem to be working (ReferenceError: event is not defined for event.preventDefault(event);).~~ Page layout and images rendered nicely, and JS functions are working. 
 
-- Optimization score of 45/100 with **PageSpeed Tools**. It suggested that CSS and JS files could be minified, browser caching could use leveragin, and the images could use compression.
+- Optimization score of 45/100 with **PageSpeed Tools**. It suggested that CSS and JS files could be minified, browser caching could use leveraging, and the images could use compression.
 
 - With **WebPageTest.org**, this site achieved scores of A for "First Byte Time", "Keep-alive Enabled", and "Compress Transfer". It only ranked a B in "Compress Images", and did very poorly (F) in "Cache static content". The site passed in the "Effective use of CDN" category.
